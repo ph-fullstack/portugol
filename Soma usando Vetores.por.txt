@@ -1,0 +1,34 @@
+programa
+{
+	funcao inicio ()
+	{
+		real a=0, m, n, S[1]
+		inteiro cont, l
+
+		escreva("Quantos números quer somar? ")
+		leia(l)
+		
+		real x[l]
+		
+		para (cont=1; cont<=l; cont++)
+			{
+				escreva("Digite o "+cont+"º número: ")
+				leia(x[cont])
+
+				se (x[cont]>m)
+					{
+						m=x[cont]
+					}
+				se (x[cont]<n)
+					{
+						n=x[cont]
+					}
+				
+				S[0]=S[0]+x[cont]
+			}
+		
+		escreva("\nA soma é: "+S[0])
+		escreva("\nSendo "+m+" o maior")
+		escreva("\nE "+n+" o menor")
+	}
+}

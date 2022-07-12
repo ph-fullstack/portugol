@@ -1,0 +1,32 @@
+programa
+{
+	funcao inicio ()
+	{
+	real E, J, M, V
+	inteiro P
+	
+	escreva("Valor do empréstimo: R$")
+	leia (E)
+	escreva("Taxa de juros(%): ")
+	leia (J)
+	escreva("Quantidade de parcelas: ")
+	leia (P)
+	M=E+((E*J)/100)
+	V= M/P
+	escreva("\nO valor de cada parcela é R$"+V)
+	escreva("\nTotalizando R$"+M)
+	
+	
+	
+	
+	
+}
+	
+		
+		
+		
+		
+		
+		
+	}
+}

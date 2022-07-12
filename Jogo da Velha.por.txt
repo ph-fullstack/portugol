@@ -1,0 +1,172 @@
+programa
+{
+	funcao inicio ()
+	{
+		caracter a[9]={'1', '2', '3', '4', '5', '6', '7', '8', '9'}
+		caracter j1='X', j2='O', troca='X'
+		inteiro f=0, r=1, c=0, t
+		logico l=falso
+
+		enquanto (f==0)
+			{
+				escreva ("+—————+—————+—————+\n")
+				escreva ("|     |     |     |\n")
+				escreva ("|  "+a[0]+"  |  "+a[1]+"  |  "+a[2]+"  |\n")
+				escreva ("|     |     |     |\n")
+				escreva ("+—————+—————+—————+\n")
+				escreva ("|     |     |     |\n")
+				escreva ("|  "+a[3]+"  |  "+a[4]+"  |  "+a[5]+"  |\n")
+				escreva ("|     |     |     |\n")
+				escreva ("+—————+—————+—————+\n")
+				escreva ("|     |     |     |\n")
+				escreva ("|  "+a[6]+"  |  "+a[7]+"  |  "+a[8]+"  |\n")
+				escreva ("|     |     |     |\n")
+				escreva ("+—————+—————+—————+\n\n")
+				escreva ("Jogador ["+j1+"] escolha a posição: ")
+				leia (t)
+				
+				enquanto (l==falso)
+					{
+						se (t<1 ou t>9)
+							{
+								escreva ("Escolha um valor válido! ")
+								leia (t)
+							}
+						senao se (a[(t-1)]==j1)
+								{
+									escreva ("Escolha um valor válido! ")
+									leia (t)
+								}
+							senao se (a[(t-1)]==j2)
+									{
+										escreva ("Escolha um valor válido! ")
+										leia (t)
+									}
+									senao
+										{
+											l=verdadeiro
+										}
+					}
+				
+				escolha (t)
+					{
+						caso 1:
+							a[0]=j1
+						pare
+						////
+						caso 2:
+							a[1]=j1
+						pare
+						////
+						caso 3:
+							a[2]=j1
+						pare
+						////
+						caso 4:
+							a[3]=j1
+						pare
+						////
+						caso 5:
+							a[4]=j1
+						pare
+						////
+						caso 6:
+							a[5]=j1
+						pare
+						////
+						caso 7:
+							a[6]=j1
+						pare
+						////
+						caso 8:
+							a[7]=j1
+						pare
+						////
+						caso contrario:
+							a[8]=j1
+						pare
+					}
+				
+				j1=j2
+				j2=troca
+				troca=j1
+				r=r+1
+				c=0
+				l=falso
+				limpa ()
+			
+				se (r==10)
+					{
+						f=2
+					}
+				
+				para (c=0; c<=6; c+=3)
+					{
+						se (a[c]==a[(c+1)] e a[c]==a[(c+2)])
+							{
+								f=1
+							}
+					}
+				para (c=0; c<=2; c++)
+					{
+						se (a[c]==a[(c+3)] e a[c]==a[(c+6)])
+							{
+								f=1
+							}
+					}
+				para (c=0; c<=2; c+=2)
+					{
+						se (c==0)
+							{
+								se (a[c]==a[4] e a[c]==a[(c+8)])
+									{
+										f=1
+									}
+							}
+						se (c==2)
+							{
+								se (a[c]==a[4] e a[c]==a[(c+4)])
+									{
+										f=1
+									}
+							}
+					}
+			}
+	se (f==1)
+		{
+			escreva ("+—————+—————+—————+\n")
+			escreva ("|     |     |     |\n")
+			escreva ("|  "+a[0]+"  |  "+a[1]+"  |  "+a[2]+"  |\n")
+			escreva ("|     |     |     |\n")
+			escreva ("+—————+—————+—————+\n")
+			escreva ("|     |     |     |\n")
+			escreva ("|  "+a[3]+"  |  "+a[4]+"  |  "+a[5]+"  |\n")
+			escreva ("|     |     |     |\n")
+			escreva ("+—————+—————+—————+\n")
+			escreva ("|     |     |     |\n")
+			escreva ("|  "+a[6]+"  |  "+a[7]+"  |  "+a[8]+"  |\n")
+			escreva ("|     |     |     |\n")
+			escreva ("+—————+—————+—————+\n\n")
+			escreva ("O jogador ["+j2+"] venceu!\n\n")
+			escreva ("JOGO FINALIZADO")
+		}
+	se (f==2)
+		{
+			escreva ("+—————+—————+—————+\n")
+			escreva ("|     |     |     |\n")
+			escreva ("|  "+a[0]+"  |  "+a[1]+"  |  "+a[2]+"  |\n")
+			escreva ("|     |     |     |\n")
+			escreva ("+—————+—————+—————+\n")
+			escreva ("|     |     |     |\n")
+			escreva ("|  "+a[3]+"  |  "+a[4]+"  |  "+a[5]+"  |\n")
+			escreva ("|     |     |     |\n")
+			escreva ("+—————+—————+—————+\n")
+			escreva ("|     |     |     |\n")
+			escreva ("|  "+a[6]+"  |  "+a[7]+"  |  "+a[8]+"  |\n")
+			escreva ("|     |     |     |\n")
+			escreva ("+—————+—————+—————+\n\n")
+			escreva ("Empate!\n\n")
+			escreva ("JOGO FINALIZADO")
+		}
+	}
+}

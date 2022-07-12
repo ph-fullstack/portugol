@@ -1,0 +1,46 @@
+programa
+{
+	funcao inicio ()
+	{
+		inteiro i, c, l, s
+		real v
+		
+		escreva("Digite a quantidade de números: ")
+		leia(i)
+		escreva("\n")
+		
+		l=i+1
+		real m[l]
+		
+		para (c=1; c<l; c++)
+			{
+				escreva("Digite o "+c+"º número: ")
+				leia(m[(c-1)])
+			}
+		
+		para (c=0; c<l; c++)
+			{
+				para (s=c+1; s<(l-1); s++)
+					{
+						se (m[c]>m[s])
+							{
+								v=m[s]
+								m[s]=m[c]
+								m[c]=v
+							}
+					}
+			}
+		
+		escreva("\nA sequência é:\n")
+		para (c=0; c<(l-1); c++)
+			{
+				escreva(m[c]+"\n")
+			}
+		
+		
+		
+		
+		
+		
+	}
+}

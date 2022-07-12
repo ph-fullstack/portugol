@@ -1,0 +1,46 @@
+programa
+{
+	funcao inicio ()
+	{
+		inteiro N, L
+		
+		escreva ("Número inicial: ")
+		leia(N)
+		escreva ("Limite: ")
+		leia(L)
+		escreva ("Contando de "+N+" até "+L+":\n")
+		
+		
+		se (N<=L)
+			{
+				enquanto (N<=L)
+					{
+						escreva ("\n"+N)
+						N=N+1
+					}
+			}
+		senao
+			{
+				enquanto (N>=L)
+					{
+						escreva ("\n"+N)
+						N=N-1
+					}
+			}
+		
+		escreva("\n\nContagem terminada")	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

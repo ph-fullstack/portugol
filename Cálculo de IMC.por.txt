@@ -1,0 +1,66 @@
+programa
+{
+	funcao inicio ()
+	{
+		real M, A, IMC
+        
+		escreva("Digite o valor da sua massa em KG: ")
+		leia (M)
+		escreva("Digite o valor da sua altura em M: ")
+		leia (A)
+		
+		IMC= (M/(A*A))
+		
+		escreva("\n---------------------- IMC ----------------------\n")
+		escreva("# IMC: "+IMC+"\n")
+		escreva("# Status: ")
+		
+		se (IMC>=18.5 e IMC<25)
+			{
+				escreva("Parabéns! Você tem o peso ideal!")
+			}
+		senao
+			{
+				escreva("Lamento, você não tem o peso ideal :(")
+			}
+		escreva("\n# Classificação: ")
+		
+		se (IMC<17)
+			{
+				escreva("Muito abaixo do peso ideal")
+			}
+			senao se(IMC>=17 e IMC<18.5)
+				{
+					escreva("Abaixo do peso ideal")
+				}
+				senao se(IMC>=18 e IMC<25)
+					{
+						escreva("Peso ideal")
+					}
+					senao se(IMC>=25 e IMC<30)
+						{
+							escreva("Sobrepeso")
+						}
+						senao se(IMC>=30 e IMC<35)
+							{
+								escreva("Obesidade")
+							}
+							senao se(IMC>=35 e IMC<40)
+								{
+									escreva("Obesidade servera")
+								}
+								senao
+									{
+										escreva("Obesidade mórbida")
+									}
+			
+		escreva("\n-------------------------------------------------\n")
+		
+		
+		
+		
+		
+		
+		
+	}
+}

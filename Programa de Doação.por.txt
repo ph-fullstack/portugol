@@ -1,0 +1,62 @@
+programa
+{
+	funcao inicio ()
+	{
+	inteiro N
+	real V
+	
+	N=0
+	escreva("================================\n")
+	escreva(" Ajude a empresa com uma doação\n")	
+	escreva("================================\n")
+	escreva("Escolha o valor da doação\n")
+	escreva("\n[1] Doação de R$5,00\n")
+	escreva("[2] Doação de R$10,00\n")
+	escreva("[3] Doação de R$15,00\n")
+	escreva("[4] Doação de R$20,00\n")
+	escreva("[5] Escolher outro valor\n")
+	escreva("[6] Cancelar a doação\n")
+	escreva("Opção: ")
+	leia (N)
+	
+	limpa()
+	
+	escolha(N)
+		{
+			caso 1:
+				V= 5.00
+				pare
+			caso 2: 
+				V=10.00
+				pare
+			caso 3: 
+				V=15.00
+				pare
+			caso 4: 
+				V=20.00
+				pare
+			caso 5: 
+				escreva("\nDigite o valor: ")
+				leia (V)
+				limpa()
+				pare
+			caso 6: 
+				escreva("\n================================================")
+				escreva("\n 	 Doação cancelada, tenha um ótimo dia!")
+				escreva("\n================================================")
+				pare
+			caso contrario:
+				escreva("\n#######################################################")
+				escreva("\n#Opção inválida, recarregue a página e tente novamente#")
+				escreva("\n#######################################################")
+				pare
+		}
+	se (N==1 ou N==2 ou N==3 ou N==4 ou N==5)
+		{
+			escreva("\n================================================")
+			escreva("\nSua doação de R$"+V+" foi efetuada com sucesso!")
+			escreva("\nTenha um ótimo dia!")
+			escreva("\n================================================")
+		}
+	}
+}

@@ -1,0 +1,84 @@
+programa
+{
+	funcao inicio ()
+	{
+		real mat, port, N1
+		inteiro N2
+		caracter D
+		
+		escreva ("=======================================\n")
+		escreva ("        Aproveitamento do Aluno\n")
+		escreva ("=======================================\n\n")
+		escreva ("# Digite a nota de matemática: ")
+		leia (mat)
+		escreva ("# Digite a nota de português: ")
+		leia (port)
+		escreva ("\n----------------------------------------\n")
+		
+		N1=(mat+port)/2
+		N2=(mat+port)/2
+		
+		se ((mat<=10 e mat>=0) e (port<=10 e port>=0))
+			{
+				escolha(N2)
+					{
+						caso 10:
+							D='A'
+						pare
+						////////////////////////////////////
+						////////////////////////////////////
+						caso 9:
+							D='A'
+						pare
+						////////////////////////////////////
+						////////////////////////////////////
+						caso 8:
+							D='B'
+						pare
+						////////////////////////////////////
+						////////////////////////////////////
+						caso 7:
+							D='C'
+						pare
+						////////////////////////////////////
+						////////////////////////////////////
+						caso 6:
+							D='D'
+						pare
+						////////////////////////////////////
+						////////////////////////////////////
+						caso 5:
+							D='E'
+						pare
+						////////////////////////////////////
+						////////////////////////////////////
+						caso contrario:
+							D='F'
+						pare
+					}
+		
+				escreva ("\n# Média do Aluno: "+N1)
+				escreva ("\n# Desempenho do Aluno: "+D)
+				escreva ("\n\n----------------------------------------")
+			}
+		
+		senao
+			{
+				escreva ("\n# Valores incorretos, a nota avaliada é")
+				escreva ("\n  entre 0.00 a 10.00. Reveja os dados e")
+				escreva ("\n  tente novamente")
+				escreva ("\n\n----------------------------------------")
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

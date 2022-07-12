@@ -1,0 +1,136 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio ()
+	{
+		real n1, n2, r
+		cadeia op
+		inteiro q, c
+		
+		escreva ("=========================")
+		escreva ("\n       Calculadora")
+		escreva ("\n=========================\n")
+		
+		escreva ("Operação: ")
+		leia(op)
+		escreva ("-------------------------")
+		escreva ("\n\n")
+		
+		escolha (op)
+			{
+				caso ("+"):
+				
+					escreva ("Quantidade de parcelas: ")
+					leia (q)
+					
+					r=0
+					
+					para (c=1; c<=q; c+=1)
+						{
+							escreva ("Valor da "+c+"ª parcela: ")
+							leia (n1)
+							r=r+n1
+						}
+					
+					resultado (r)
+					
+				pare
+				////////////////////////////////////
+				////////////////////////////////////
+				caso ("-"):
+					
+					escreva ("Valor do minuendo: ")
+					leia (n1)
+					escreva ("Valor do subtraendo: ")
+					leia (n2)
+					
+					r=n1-n2
+				
+					resultado (r)
+
+				pare
+				////////////////////////////////////
+				////////////////////////////////////
+				caso ("*"):
+					
+					escreva ("Quantidade de valores: ")
+					leia (q)
+					
+					r=1
+					
+					para (c=1;c<=q;c+=1)
+						{
+							escreva (c+"° número: ")
+							leia (n1)
+							
+							r=r*n1
+						}
+					
+					resultado (r)
+				pare
+				////////////////////////////////////
+				////////////////////////////////////
+				caso ("/"):
+					
+					escreva ("Valor do dividendo: ")
+					leia (n1)
+					escreva ("Valor do divisor: ")
+					leia (n2)
+					
+					r=n1/n2
+
+					resultado (r)
+					
+				pare
+				////////////////////////////////////
+				////////////////////////////////////
+				caso ("^"):
+				
+					escreva ("Valor da base: ")
+					leia (n1)
+					escreva ("Valor do expoente: ")
+					leia (n2)
+					
+					r=m.potencia(n1,n2)
+					
+					resultado (r)
+				
+				pare
+				////////////////////////////////////
+				////////////////////////////////////
+				caso ("√"):
+				
+					escreva ("O valor do índice: ")
+					leia (n2)
+					escreva ("O valor do radicando: ")
+					leia (n1)
+					
+					r=m.raiz(n1,n2)
+				
+					resultado (r)
+				
+				pare
+				////////////////////////////////////
+				////////////////////////////////////
+				caso contrario:
+					limpa()
+					escreva ("\n###################################")
+					escreva ("\nOperação inválida, tente novamente.\n")
+					escreva ("\nOperadores:")
+					escreva ("\nAdição--> +        Subtração--> -")
+					escreva ("\nMultiplicação--> *   Divisão--> /")
+					escreva ("\nPotência--> ^           Raiz--> √")
+					escreva ("\n###################################")
+				pare
+			}
+	}
+	
+	funcao resultado (real r)
+	{
+		escreva ("\n")
+		escreva ("-------------------------")
+		escreva ("\nO resultado do cálculo")
+		escreva ("\né "+r)
+		escreva ("\n=========================")
+	}
+}

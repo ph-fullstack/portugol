@@ -1,0 +1,30 @@
+programa
+{
+	funcao inicio ()
+	{
+	inteiro at, nasc, idade
+	escreva("Em que ano você nasceu?")
+	leia (nasc)
+    escreva("Em que ano estamos?")
+	leia (at)
+    idade = at-nasc
+    escreva("\nSua idade atual é "+idade)
+	
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+	
+		
+		
+		
+		
+		
+		
+	}
+}

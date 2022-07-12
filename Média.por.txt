@@ -1,0 +1,41 @@
+programa
+{
+	funcao inicio ()
+	{
+		inteiro c, l
+		real m, s, n
+
+		escreva("Digite a quantidade de números: ")
+		leia(l)
+		escreva("\n")
+		
+		s=0
+		
+		//O primeiro espaço é o início
+
+		//O segundo é o limite(quando a expressão for
+		//falsa, a estrutura é finalizada)
+		
+		//O terceiro é a variação que vai ocorrer depois
+		//de cada ciclo de repetição
+		para (c=1; c<=l; c+=1)
+			{
+				escreva("Digite o "+c+"° número: ")
+				leia(n)
+				
+				s=s+n
+			}
+		
+		m=s/l
+
+		escreva("\nA média é: "+m)
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

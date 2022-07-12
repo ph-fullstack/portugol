@@ -1,0 +1,44 @@
+programa
+{
+	funcao inicio ()
+	{
+		inteiro c, s, n, ma, me, l
+		
+		s=0
+		c=1
+		
+		escreva ("Quantos números você quer somar? ")
+		leia (l)
+		escreva ("\n")
+		
+		enquanto (c<=l)
+			{
+				escreva ("Digite o "+c+"° número: ")
+				leia (n)
+				c=c+1
+				s=s+n
+
+				se (n>ma)
+					{
+						ma=n
+					}
+				
+				se (n<me)
+					{
+						me=n
+					}
+			}
+
+		escreva ("\nA soma dos números é: "+s)
+		escreva ("\n\nSendo "+ma+" o maior número")
+		escreva ("\nE "+me+" o menor número")
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}

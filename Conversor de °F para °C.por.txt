@@ -1,0 +1,22 @@
+programa
+{
+	funcao inicio ()
+	{
+	real C, F
+	
+	escreva("Digite o valor em °F:")
+	leia (F)
+	C= (F-32)/1.8	
+	escreva("A temperatura é °C"+C)	
+		
+	}
+}
+	
+		
+		
+		
+		
+		
+		
+
+

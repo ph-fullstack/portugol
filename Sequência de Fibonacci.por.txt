@@ -1,0 +1,47 @@
+programa
+{
+	funcao inicio ()
+	{
+		inteiro contF, contI, antigo1, antigo2, atual
+		
+		escreva("Quantos números você quer? ")
+		leia(contF)
+		
+		antigo1=0
+		atual=1
+		
+		se (contF>=3)
+			{
+				escreva ("\n0, 1, ")
+		
+				para (contI=3;contI<=contF;contI+=1)
+					{
+				
+						antigo2=antigo1
+						antigo1=atual
+						atual=antigo1+antigo2
+						escreva (atual+", ")
+						se (atual%2==0)
+							{
+								escreva("\n")
+							}
+					}
+				
+				escreva("\n\nSequência terminada")
+			}
+		senao
+			{
+				escreva ("\nÉ necessário no mínimo 3 números para")
+				escreva ("\na sequência de Fibonacci funcionar")
+			}
+		
+		
+		
+		//Essa sequência de Fibonacci é meio complicada
+		//de fazer kkkkkkkkkkkkkkk
+		
+		
+		
+		
+	}
+}

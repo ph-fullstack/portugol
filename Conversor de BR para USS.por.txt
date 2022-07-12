@@ -1,0 +1,26 @@
+programa
+{
+	funcao inicio ()
+	{
+	real br, dolar, cotacao
+	
+	escreva ("Quantos reais você tem? R$")	
+	leia (br)
+	escreva ("Digite a cotação do dólar atualmente: R$")
+	leia (cotacao)
+	dolar = br/cotacao	
+	escreva ("\nR$"+br+" equivale a US$"+dolar)	
+		
+		
+		
+	}
+}
+	
+		
+		
+		
+		
+		
+		
+	}
+}

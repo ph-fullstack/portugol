@@ -1,0 +1,53 @@
+programa
+{
+	inclua biblioteca Matematica --> m
+	funcao inicio ()
+	{
+		
+		real n, m
+
+		escreva ("Digite um número: ")
+		leia (n)
+		escreva ("Outro número: ")
+		leia (m)
+		
+		adicao (n+m)
+		subtracao (n-m)
+		multiplicacao (n*m)
+		divisao (n/m)
+		potenciacao (m.potencia(n,m), n, m)
+		radiciacao (m.raiz(n,m), n, m)
+	}
+	
+	funcao adicao(real A)
+	{
+		escreva("\nA soma entre eles é: "+A)
+	}
+	
+	funcao subtracao (real S)
+	{
+		escreva("\n\nA subtração entre eles é: "+S)
+	}
+	
+	funcao multiplicacao (real M)
+	{
+		escreva("\n\nA multiplicação entre eles é: "+M)
+	}
+	
+	funcao divisao (real D)
+	{
+		escreva("\n\nA divisão entre eles é: "+D)
+	}
+	
+	funcao potenciacao (real P, real n, real m)
+	{
+		escreva("\n\nA potência de base "+n+" e")
+		escreva("\nexpoente "+m+" é: "+P)
+	}
+	
+	funcao radiciacao (real R, real n, inteiro m)
+	{
+		escreva("\n\nA radiciação do radicando "+n+" com")
+		escreva("\n"+m+" sendo índice, é: "+R)
+	}
+}

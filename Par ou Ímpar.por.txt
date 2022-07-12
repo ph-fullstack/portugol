@@ -1,0 +1,29 @@
+programa
+{
+	funcao inicio ()
+	{
+	    inteiro N, D
+
+	    escreva("Digite o número: ")
+		leia (N)
+		
+		se (N%2==0)
+		    {
+			    escreva("O número "+N+" é par")
+	        }
+		senao
+            {
+            	escreva("O número "+N+" é impar")
+            }
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    }
+}
